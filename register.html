@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+	<form action = "/users/register" method="POST">
+		<input type="text" name="username" value="{{ request.form.username }}">
+		<input type="text" name="password" value="{{ request.form.password }}">
+		<input type="text" name="email" value="{{ request.form.email }}">
+
+		<button type="submit">Register</button>
+	</form>
+{% endblock %}
